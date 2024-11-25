@@ -8,7 +8,8 @@ class Main {
 
     public static void main(String[] args) throws InterruptedException, ExecutionException {
         long start = System.currentTimeMillis();
-        int[] numbers = ArrayUtils.fillArray(0, 100, 50);
+        int[] numbers = ArrayUtils.fillArray(0, 100, 40);
+        System.out.println(Arrays.toString(numbers));
         int countOfThreads = 5;
 
         int[][] splitArray = ArrayUtils.splitArray(numbers, countOfThreads);

@@ -33,7 +33,7 @@ public class ArrayUtils {
     }
 
     public static Set<Integer> multiplyEvenOnOdd(int[] subArray) {
-        Set<Integer> partialResults = new HashSet<>();
+        Set<Integer> partialResults = new LinkedHashSet<>();
 
         for (int i = 0; i < subArray.length - 1; i += 2) {
             partialResults.add(subArray[i] * subArray[i + 1]);
